@@ -55,6 +55,17 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
     ssh-keygen -t rsa -C "youremail@example.com"
   2)login GitHub. open Account settings -> click SSH key  -> add SSH Key
  
- add Remote Repository:
+  add Remote Repository:
   git remote add origin https://github.com/vickywang0102/git_test.git
-                                
+
+  use Proxy for Git:
+  git config http.proxy http://10.50.20.69:3128
+  
+  remember username and password:
+  git config --global credential.helper store
+  
+  remove Remote repository:
+  git remote remove origin  
+          
+          
+                                 
