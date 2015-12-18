@@ -63,10 +63,11 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
   
   5)push your locoal file to remote repository
   git push -u origin master
-  5)remember username and password:
+  
+  6)remember username and password:
   git config --global credential.helper store
   
-  remove Remote repository:
+  7)remove Remote repository:
   git remote remove origin  
           
           
