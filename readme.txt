@@ -70,5 +70,23 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
   7)remove Remote repository:
   git remote remove origin  
           
-          
-                                 
+9 clone a local repository from remote repository 
+  git clone         
+
+
+=======================================================
+10 create&delete branch:
+  
+  main branch: master(pointer)
+  dev branch:  devt (pointer)
+  
+  check branch: git branch
+  
+  1) createa and change to devt branch:
+    git checkout -b devt   or (git branch devt && git checkout devt)
+    commit your change to devt branch.
+  2) merger devt branch back to master branch.
+    git checkout master
+    git merge devt
+  3) delete devt branch
+    git branch -d devt                              
