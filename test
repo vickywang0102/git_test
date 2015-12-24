@@ -1,2 +1,7 @@
-branch test
+<<<<<<< HEAD
+branch test1
 
+=======
+branch test1
+branch test2
+>>>>>>> test1
