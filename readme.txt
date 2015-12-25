@@ -89,4 +89,11 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
     git checkout master
     git merge devt
   3) delete devt branch
-    git branch -d devt                              
+    git branch -d devt
+  4) resoved conflict and commit the fixes.
+  
+  5)git stash. save the current working dir. then can go to another branch and fix some urgent bugs.
+    git stash apply/git stash drop/git stash pop/git stash list
+    git stash apply stash@{0} -> restore the specify version
+  
+                            
