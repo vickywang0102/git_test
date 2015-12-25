@@ -83,17 +83,32 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
   check branch: git branch
   
   1) createa and change to devt branch:
-    git checkout -b devt   or (git branch devt && git checkout devt)
-    commit your change to devt branch.
+     git checkout -b devt   or (git branch devt && git checkout devt)
+     commit your change to devt branch.
   2) merger devt branch back to master branch.
-    git checkout master
-    git merge devt
+     git checkout master
+     git merge devt
   3) delete devt branch
-    git branch -d devt
+     git branch -d devt
   4) resoved conflict and commit the fixes.
   
-  5)git stash. save the current working dir. then can go to another branch and fix some urgent bugs.
-    git stash apply/git stash drop/git stash pop/git stash list
-    git stash apply stash@{0} -> restore the specify version
-  
+  5) Bug branch
+     git stash. save the current working dir. then can go to another branch and fix some urgent bugs.
+     git stash apply/git stash drop/git stash pop/git stash list
+     git stash apply stash@{0} -> restore the specify version
+  6) Feature Branch.
+     create a new featrue branch for each new feature.
+  7) Co-operative multiplayer
+     now we need remote repository.
+     1)git remote or git remote -v
+     2)git push origin master or git push origin <dev branch name>
+     3)git pull. if you push failed and the remote version is advanced to your local version.
+     4)Non-master branch. need to create link between your local and remote repository.
+        git checkout -b branch-name origin/branch-name
+        git branch --set-upstream branch-name origin/branch-name
+         
+     
+     Note: Master branch have to sync with remote repository since it's main branch.
+           devt branch also need to be sync'd with remote repository since all developer work on this branch.
+           
                             
