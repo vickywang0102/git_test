@@ -71,7 +71,7 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
   git remote remove origin  
           
 9 clone a local repository from remote repository 
-  git clone         
+  git clone   -> default branch is master branch      
 
 
 =======================================================
@@ -106,8 +106,14 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
      4)Non-master branch. need to create link between your local and remote repository.
         git checkout -b branch-name origin/branch-name
         git branch --set-upstream branch-name origin/branch-name
-         
-     
+     5)Create Remote dev branch of Origin to local working dir: 
+        git checkout -b dev origin/dev    
+        git branch --set-upstream branch-name origin/branch-name
+        
+     6) if the dev branch name is diff between your local and remote, you have to specify the branch name:
+        git push remote <branch name>:<remote branch name>
+        git push remote dev:dev_1
+        
      Note: Master branch have to sync with remote repository since it's main branch.
            devt branch also need to be sync'd with remote repository since all developer work on this branch.
            
