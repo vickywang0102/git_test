@@ -117,4 +117,17 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
      Note: Master branch have to sync with remote repository since it's main branch.
            devt branch also need to be sync'd with remote repository since all developer work on this branch.
            
-                            
+
+11. TAG
+    1) create tag
+        git tag -a tagname -m "description" commitID
+    2) check tag info
+        git show tagname
+    3) push tag to remote
+        git push origin tagname
+        git push origin --tags (push all tags to remote)
+    4) delete tag
+        git tag -d version1.0    
+        1)if the tag already pushed to remote repository.
+        git tag -d version1.0
+        git push origin :refs/tags/version1.0                         
