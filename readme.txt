@@ -130,4 +130,8 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
         git tag -d version1.0    
         1)if the tag already pushed to remote repository.
         git tag -d version1.0
-        git push origin :refs/tags/version1.0                         
+        git push origin :refs/tags/version1.0   
+
+
+
+                      
