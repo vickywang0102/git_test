@@ -1,5 +1,6 @@
 # this is my first file
 
+
 1. Init Git reporsitory, use 'git init' command.
 
 2. add to Git reporsitory, two steps:
